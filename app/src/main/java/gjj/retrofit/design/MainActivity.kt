@@ -2,6 +2,8 @@ package gjj.retrofit.design
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import gjj.retrofit.design.adapter.AndroidCallAdapter
+import gjj.retrofit.design.adapter.RxJavaCallAdapter
 import gjj.retrofit.design.builder.Retrofit
 import gjj.retrofit.design.convert.OkChangeCall
 import gjj.retrofit.design.convert.OkhttpCall
@@ -35,6 +37,15 @@ class MainActivity : AppCompatActivity() {
 
             log_e(call.enqueue())
 
+        }
+
+        //适配器模式
+        tv_adapter.setOnClickListener {
+
+            //rxjavaAdapter
+            RxJavaCallAdapter("rxjavaAdapter").adapt()
+            //androidAdapter
+            AndroidCallAdapter("androidAdapter").adapt()
         }
 
     }

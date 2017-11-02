@@ -31,6 +31,15 @@
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="建造者模式" />
+
+            <TextView
+                android:id="@+id/tv_adapter"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="适配器模式" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
